@@ -13,6 +13,9 @@ import mGPT.render.matplot.plot_3d_global as plot_3d
 
 
 class MotionGPT(BaseModel):
+    # yaml파일이 stage1, stage2, stage3로 나뉘어져 있지만
+    # 하나의 클래스 모델, 즉 이 MotionGPT 클래스를 사용해 학습을 진행하고 있다.
+    # 모든 시작은 여기서부터 될 것 같기 때문에, 여기서부터 하나하나 보면 될 것 같다!
     """
     Stage 1 Motion Tokenizer
     Stage 2 Motion-language pretrian
